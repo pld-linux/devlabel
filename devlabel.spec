@@ -5,7 +5,7 @@ Release:	1
 License:	GPL
 Group:		System Environment/Base
 Group:		Applications/System
-Source0:	http://linux.dell.com/devlabel/permalink/%{name}-%version.tar.gz
+Source0:	http://linux.dell.com/devlabel/permalink/%{name}-%{version}.tar.gz
 # Source0-md5:	1a4032b942d8b47544da1957374a9786
 Requires:	sed grep awk textutils fileutils diffutils coreutils mktemp
 Requires:	initscripts > 6.97-1
