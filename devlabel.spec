@@ -64,9 +64,9 @@ fi
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sbindir},%{_bindir},%{_mandir}/man8,/etc/sysconfig/devlabel.d}
 
-install -m 755 devlabel $RPM_BUILD_ROOT%{_sbindir}/devlabel
-install -m 755 scsi_unique_id $RPM_BUILD_ROOT%{_bindir}
-install -m 755 partition_uuid $RPM_BUILD_ROOT%{_bindir}
+install devlabel $RPM_BUILD_ROOT%{_sbindir}/devlabel
+install scsi_unique_id $RPM_BUILD_ROOT%{_bindir}
+install partition_uuid $RPM_BUILD_ROOT%{_bindir}
 gzip -dc devlabel.8.gz > $RPM_BUILD_ROOT%{_mandir}/man8/devlabel.8
 install sysconfig.devlabel $RPM_BUILD_ROOT/etc/sysconfig/devlabel
 install ignore_list $RPM_BUILD_ROOT/etc/sysconfig/devlabel.d
@@ -82,5 +82,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/scsi_unique_id
 %attr(755,root,root) %{_bindir}/partition_uuid
 /etc/sysconfig/devlabel.d
-%config(noreplace) /etc/sysconfig/devlabel
+%config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/devlabel
 %{_mandir}/man8/devlabel.8*
