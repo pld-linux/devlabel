@@ -1,5 +1,5 @@
 Summary:	Consistent/persistent storage device access through symlinking
-Summary(pl.UTF-8):   Spójny/stały dostęp do urządzeń z danymi poprzez symlinki
+Summary(pl.UTF-8):	Spójny/stały dostęp do urządzeń z danymi poprzez symlinki
 Name:		devlabel
 Version:	0.48.01
 Release:	1
