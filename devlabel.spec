@@ -1,5 +1,5 @@
 Summary:	Consistent/persistent storage device access through symlinking
-Summary(pl):	Spójny/sta³y dostêp do urz±dzeñ z danymi poprzez symlinki
+Summary(pl.UTF-8):   SpÃ³jny/staÅ‚y dostÄ™p do urzÄ…dzeÅ„ z danymi poprzez symlinki
 Name:		devlabel
 Version:	0.48.01
 Release:	1
@@ -27,12 +27,12 @@ unique identifier to each device/symlink combination and confirming
 that the identifier still matches the device name before it allows the
 symlink mapping to proceed.
 
-%description -l pl
-Ten pakiet zawiera implementacjê devlabel. Umo¿liwia spójne montowanie
-urz±dzeñ. Osi±ga to poprzez oznaczanie unikalnymi identyfikatorami
-ka¿dej kombinacji urz±dzenie/symlink i potwierdzanie, ¿e dany
-identyfikator nadal pasuje do nazwy urz±dzenia przed umo¿liwieniem
-odwzorowania dowi±zania symbolicznego.
+%description -l pl.UTF-8
+Ten pakiet zawiera implementacjÄ™ devlabel. UmoÅ¼liwia spÃ³jne montowanie
+urzÄ…dzeÅ„. OsiÄ…ga to poprzez oznaczanie unikalnymi identyfikatorami
+kaÅ¼dej kombinacji urzÄ…dzenie/symlink i potwierdzanie, Å¼e dany
+identyfikator nadal pasuje do nazwy urzÄ…dzenia przed umoÅ¼liwieniem
+odwzorowania dowiÄ…zania symbolicznego.
 
 %prep
 %setup -q
