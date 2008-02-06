@@ -55,11 +55,6 @@ if [ -e /etc/sysconfig/devlabel ]; then
 	fi
 fi
 
-%triggerpostun -- devlabel <= 0.38.07-1
-if [ -e /etc/sysconfig/devlabel ]; then
-	/sbin/devlabel reverseremap --force >/dev/null 2>&1 || :
-fi
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sbindir},%{_bindir},%{_mandir}/man8,/etc/sysconfig/devlabel.d}
