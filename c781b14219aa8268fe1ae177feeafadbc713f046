@@ -1,0 +1,2 @@
+- kill "-m 755" in %install
+- %verify() for config file
